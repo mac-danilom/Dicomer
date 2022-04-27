@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=''>
+    <nav class='fixed top-0 left-0 flex w-full h-16 p-4 bg-gray-100'>
+      <div class='flex w-full gap-10 justify-between items-center'>
+        <img class='w-10' src='src/dicomer-logo.png' />
+        <ul class='flex justify-between items-center gap-4'>
+          <li class=''><button>Início</button></li>
+          <li class=''><button>Sobre</button></li>
+          <li class=''><button>Time</button></li>
+          <li class=''><button>Fale conosco</button></li>
+          <li class='bg-black text-white rounded px-3 py-2'><button>Download</button>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- 1° Secção: Home -->
+    <section class='flex items-center justify-center w-full mt-16 h-[600px]'>
+      <div class="container flex w-full">
+        <div class="flex w-full justify-around">
+          <div class="flex flex-col justify-center">
+            <h1 class='font-bold text-4xl'>Dicomer</h1>
+            <p class='font-semibold text-red-500 italic text-2xl mt-4'>Nunca foi tão fácil encontrar<br> aquela receita <span class='font-bold'>deliciosa</span>!</p>
+          </div>
+          <img class='w-96' src='src/coocking-illustration.jpg'/>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- 2° Secção: Sobre -->
+    <section class='flex justify-center w-full mt-16 h-[600px]'>
+      <div class="container flex w-full items-center">
+
+        <img class='w-[700px] h-[500px]' src='src/recipe.jpg'/>
+        <div class="flex flex-col justify-center gap-6">
+          <h1 class="text-3xl font-bold">O que é?</h1>
+          <p class="text-xl w-[600px]">
+            Dicomer é uma plataforma que utiliza inteligência artificial para 
+            recomendar a receita mais gostosa de todas utilizando somente os 
+            ingredientes que você tem.
+          </p>
+          <p class="text-xl w-[600px]">
+            Pra isso você só precisa seguir estes passos:
+          </p>
+          <div class="flex gap-4">
+            <div class="flex flex-col gap-2 rounded basis-1/3 p-6 bg-[#FF735C] text-white">
+              <h1 class="font-bold text-xl">1. Liste todos os seus ingredientes</h1>
+              <p>Aqui vale tudo! Quanto mais ingredientes você inserir, mais opções poderemos encontrar pra você.</p>
+            </div>
+            <div class="flex flex-col gap-2 rounded basis-1/3 p-6 bg-[#C27362] text-white">
+              <h1 class="font-bold text-xl">2. Espere nossa inteligência processar</h1>
+              <p>Receitas comuns são as primeiras sugestões da IA. Então se seu objetivo é impressionar, recomendamos esperar um ou dois minutos de processamento.</p>
+            </div>
+            <div class="flex flex-col gap-2 rounded basis-1/3 p-6 bg-[#385A64] text-white">
+              <h1 class="font-bold text-xl">3. Escolha a receita que você mais gostar</h1>
+              <p>No fim, você terá várias receitas do mundo todo que utilizam exatamente os ingredientes que você tem. Agora é só escolher a mais gostosa.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+      
+    <hr>
+
+    <!-- 3° Secção: Entre em contato -->
+    <section class='flex justify-center w-full mt-16 h-[600px]'>
+      <div class="container flex w-full items-center justify-center">
+
+        <div class="flex flex-col justify-center gap-6">
+          <h1 class="text-3xl font-bold">Você gostou do app Dicomer?</h1>
+          <form class="p-5 border bg-[#385A64] text-white rounded-xl" action="https://formsubmit.co/luizataveira@hotmail.com" method="POST" >
+            <label for="nome">Nome:</label><br>
+            <input class="text-black w-full rounded mb-2" type="text" id="nome" name="nome"><br>
+            <label for="email">Email:</label><br>
+            <input class="text-black w-full rounded mb-2" type="text" id="email" name="email"><br>
+            <label for="conselho">O que você achou?</label><br>
+            <textarea class="text-black w-full rounded mb-2" name="conselho" rows="10" cols="30"></textarea>
+            <input class="border border-white rounded px-3 py-2 hover:bg-white hover:text-[#385A64]" type="submit" value="Enviar">
+          </form>
+        </div>
+        <img class='w-[500px] h-[500px]' src='src/pao.jpg'/>
+
+      </div>
+    </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
